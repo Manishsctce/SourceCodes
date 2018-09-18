@@ -1,0 +1,1 @@
+hello there, This is 1st file 2nd line of 1st fileLets check how it parse to special character & | -& ^ !End of 1st file

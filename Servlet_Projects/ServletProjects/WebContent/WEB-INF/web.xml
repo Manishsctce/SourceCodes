@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>ServletProjects</display-name>
+  <welcome-file-list>
+    <welcome-file>home.html</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>GenericServletDemo1</servlet-name>
+  	<servlet-class>com.sample.servlets.GenericServletDemo1</servlet-class>
+  	
+  	<init-param>
+  		<param-name>ServletConfigParam</param-name>
+  		<param-value>Value1</param-value>
+  	</init-param>  	
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>DownloadFilesServlet</servlet-name>
+  	<display-name>Download Files using Servlet</display-name>
+  	<servlet-class>com.sample.servlets.DownloadFilesServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DownloadFilesServlet</servlet-name>
+  	<url-pattern>/downloadFiles/*</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>GenericServletDemo1</servlet-name>
+  	<url-pattern>/GenericServlets22</url-pattern>
+  </servlet-mapping>
+  
+  <context-param>  
+	<param-name>username</param-name>  
+	<param-value>system</param-value>  
+  </context-param>  
+  
+  <context-param>  
+	<param-name>password</param-name>  
+	<param-value>oracle</param-value>  
+  </context-param>  
+  
+  <filter>
+  	<filter-name>FilterDemo</filter-name>
+  	<filter-class>com.sample.servlets.FilterDemo1</filter-class>
+  </filter>
+  
+  <filter-mapping>
+  		<filter-name>FilterDemo</filter-name>
+  		<url-pattern>/GenericServlets22</url-pattern>
+  </filter-mapping>
+</web-app>

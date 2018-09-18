@@ -1,0 +1,14 @@
+For Running this 
+
+Go to D:\Software\java oracle\mysql_installer\mysql-5.6.40-winx64\bin
+cmd mysqld
+
+cmd mysql
+
+# if mydb is not created.
+mysql> create database mydb;
+
+## use mydb database
+use mydb
+
+run Hibernate_Test.java as Java Applicaiton

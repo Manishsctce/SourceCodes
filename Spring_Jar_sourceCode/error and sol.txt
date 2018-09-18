@@ -1,0 +1,18 @@
+
+SEVERE: Error configuring application listener of class org.springframework.web.context.ContextLoaderListener
+java.lang.NoClassDefFoundError: javax/servlet/ServletContextListener
+
+
+to resolve the java.lang.ClassNotFoundException: DispatcherServlet
+add all spring jar file in project -> Java  Build Path
+
+
+filter state the architecture of the type of project.
+
+##while loading the bean definition from metadata if wrong class is being refer then 
+Exception in thread "main" org.springframework.beans.factory.CannotLoadBeanClassException
+
+##while loading the bean definition from metadata if wrong bean info passed
+Exception in thread "main" org.springframework.beans.factory.NoSuchBeanDefinitionException
+
+Exception in thread "main" org.springframework.beans.factory.BeanCreationException

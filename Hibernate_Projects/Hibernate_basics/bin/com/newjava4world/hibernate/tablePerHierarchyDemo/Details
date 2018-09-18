@@ -1,0 +1,22 @@
+For Running this 
+
+Go to D:\Software\java oracle\mysql_installer\mysql-5.6.40-winx64\bin
+cmd mysqld
+
+cmd mysql -u root -p
+
+# if mydb is not created.
+mysql> create database mydb;
+
+## use mydb database
+use mydb
+
+run Hibernate_Test.java as Java Applicaiton
+
+> Authors publish Books, and Books have Authors. 
+- Any one Author can publish many Books, and any one Book can be published by many Authors, so this is why it is a many to many relationship.
+Other examples of the many to many relationship are Students to Courses and Employees to Projects.
+
+
+
+https://howtoprogramwithjava.com/hibernate-manytomany-unidirectional-bidirectional/

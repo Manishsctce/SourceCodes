@@ -1,0 +1,5 @@
+Hello This is Java Input Output stream programming
+2nd line of 1st file
+Lets check how it parse to special character & | -
+& ^ !
+End of 1st file

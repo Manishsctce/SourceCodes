@@ -1,0 +1,5 @@
+> Just Run the SOAPPublisher Main method class as Java application. 
+> Add "?wsdl" to generate WSDL of endpoint url
+Ex- http://localhost:8888/ws/person?wsdl
+
+> Now with runing webservices, run SOAPPublisherClient as java application

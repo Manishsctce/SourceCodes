@@ -1,0 +1,4 @@
+> Put bundles in WebContent/lib
+> Run the project as Run on server Tomcatv8.0 
+> invoke "http://localhost:8080/REST_Ex_jsr2.x/rest/person/1/getDummy"
+- Here "REST_Ex_jsr2.x" is web-context given at creating the web project. Can change from setting->web-project-setting

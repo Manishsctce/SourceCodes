@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/Manish Agrawal/#myWork/CS/SourceCodes/SOAP_Projects/JARS/apache CXF runtime core for wsdl bundles/asm-5.0.3.jar"/>
+	<classpathentry kind="lib" path="D:/Manish Agrawal/#myWork/CS/SourceCodes/SOAP_Projects/JARS/apache CXF runtime core for wsdl bundles/cxf-core-3.1.0.jar" sourcepath="C:/Users/managraw/AppData/Local/Temp/.org.sf.feeling.decompiler1512796767130/source/cxf-core-3.1.0-sources.jar"/>
+	<classpathentry kind="lib" path="D:/Manish Agrawal/#myWork/CS/SourceCodes/SOAP_Projects/JARS/apache CXF runtime core for wsdl bundles/cxf-rt-wsdl-3.1.0.jar"/>
+	<classpathentry kind="lib" path="D:/Manish Agrawal/#myWork/CS/SourceCodes/SOAP_Projects/JARS/apache CXF runtime core for wsdl bundles/cxf-testutils-2.5.2.jar" sourcepath="C:/Users/managraw/AppData/Local/Temp/.org.sf.feeling.decompiler1526648913447/source/cxf-testutils-2.5.2-sources.jar"/>
+	<classpathentry kind="lib" path="D:/Manish Agrawal/#myWork/CS/SourceCodes/SOAP_Projects/JARS/apache CXF runtime core for wsdl bundles/woodstox-core-asl-4.4.1.jar"/>
+	<classpathentry kind="lib" path="D:/Manish Agrawal/#myWork/CS/SourceCodes/SOAP_Projects/JARS/apache CXF runtime core for wsdl bundles/wsdl4j-1.6.3.jar"/>
+	<classpathentry kind="lib" path="D:/Manish Agrawal/#myWork/CS/SourceCodes/SOAP_Projects/JARS/apache CXF runtime core for wsdl bundles/xmlschema-core-2.2.1.jar"/>
+	<classpathentry kind="lib" path="D:/Manish Agrawal/#myWork/CS/SourceCodes/SOAP_Projects/JARS/apache CXF runtime core for wsdl bundles/cxf-common-utilities-2.4.1.jar"/>
+	<classpathentry kind="lib" path="D:/Manish Agrawal/#myWork/CS/SourceCodes/SOAP_Projects/JARS/apache CXF runtime core for wsdl bundles/cxf-api-2.4.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

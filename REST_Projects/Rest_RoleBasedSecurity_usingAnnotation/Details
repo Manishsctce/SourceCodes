@@ -1,0 +1,10 @@
+Invoke below url from postman with basic auth parameters: howtodoinjava/password
+http://localhost:8080/Rest_RoleBasedSecurity_usingAnnotation/rest/employees
+
+
+
+
+
+
+
+https://howtodoinjava.com/jersey/jersey-rest-security/
