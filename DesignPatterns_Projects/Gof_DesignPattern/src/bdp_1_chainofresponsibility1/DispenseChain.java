@@ -1,4 +1,4 @@
-package com.journaldev.design.chainofresponsibility;
+package bdp_1_chainofresponsibility1;
 
 public interface DispenseChain {
 	void setNextChain(DispenseChain nextChain);	

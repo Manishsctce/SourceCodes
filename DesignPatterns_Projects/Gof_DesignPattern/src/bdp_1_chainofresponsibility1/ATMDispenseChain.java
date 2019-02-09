@@ -1,4 +1,4 @@
-package com.journaldev.design.chainofresponsibility;
+package bdp_1_chainofresponsibility1;
 import java.util.Scanner;
 
 public class ATMDispenseChain {

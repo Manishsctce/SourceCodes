@@ -1,4 +1,4 @@
-package com.journaldev.design.chainofresponsibility;
+package bdp_1_chainofresponsibility1;
 
 public class Currency {
 	private int amount;	
