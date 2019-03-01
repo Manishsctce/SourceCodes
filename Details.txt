@@ -1,0 +1,4 @@
+########### FREE API #############
+https://openweathermap.org/api    manishsctce/manish321@
+
+http://parabank.parasoft.com/parabank/services/bank/customers/12212/
