@@ -15,7 +15,7 @@ public class BasicQuestion6 {
 		// TODO Auto-generated method stub
 
 		long longWithL = 1000 * 60 * 60 * 24 * 365L;
-		long longWithoutL = 1000 * 60 * 60 * 24 * 365;
+		long longWithoutL = 1000 * 60 * 60 * 24 * 365;	
 		System.out.println(longWithL);
 		System.out.println(longWithoutL);
 
