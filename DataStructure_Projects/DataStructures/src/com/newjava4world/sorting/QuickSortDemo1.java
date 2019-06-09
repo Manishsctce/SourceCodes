@@ -29,6 +29,8 @@ public class QuickSortDemo1 {
 				piv = right;
 			}
 			
+			display(a);
+			
 			while(a[piv]>=a[left]&&left!=piv)
 				left = left+1;
 			
@@ -41,6 +43,7 @@ public class QuickSortDemo1 {
 				a[left] = temp;
 				piv = left;
 			}
+			display(a);
 		}
 		
 		quick(a,low,piv-1);
@@ -49,11 +52,13 @@ public class QuickSortDemo1 {
 	}
 	
 	public static void main(String[] args) {
-		int arr[] = {23, 324,345, 234, 643,245};
+		int arr[] = {777, 23, 324,345, 234, 643,245};
 		System.out.print("\nUnsorted arry: ");
 		display(arr);
+		System.out.println();
+		
 		int a[] = QuickSortDemo1.quickSort(arr);
-		System.out.print("\nSorted Array using Quick sort: ");
+		System.out.print("\n\nSorted Array using Quick sort: ");
 		display(a);
 		//Integer ;
 		
@@ -63,5 +68,12 @@ public class QuickSortDemo1 {
 		for(int i=0;i<a.length;i++){
 			System.out.print(a[i]+" ");
 		}
-	}	
+	}
+	
+	public static void display(int a[], int count) {
+		System.out.println();
+		for(int i=0;i<count;i++){
+			System.out.print(a[i]+" ");
+		}
+	}
 }

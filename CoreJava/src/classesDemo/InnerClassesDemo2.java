@@ -12,28 +12,17 @@ import classesDemo.TopClass.StaticMemberClass1;
  */
 class TopClass{
 	private String topClassVar;
+	private static String topClassStaticVar;
 	TopClass(){}
 	TopClass(String topClassVar){
 		this.topClassVar = topClassVar;
 	}
-	class MemberClass1{
-		void memberClassMethod1(){
-			System.out.println("Member Class can access private member of its enclosing class: "+topClassVar);
-		}
-	}//End of MemberClass
 	
-	private class MemberClass2{
-		void memberClassMethod1(){
-			System.out.println("Member Class can access private member of its enclosing class: "+topClassVar);
-		}
-	}
-	
-	static class StaticMemberClass1{
-		public void staticMemberClassMethod1(){
-			System.out.println("static Member Class Method");
-		}
-	}
 	void topClassMethod1(){
+		
+		//static String topClassStaticLocalVar1;
+		//static final String topClassStaticLocalVar2="";
+		
 		// LocalInnerClass cannot be private,public,protected.LocalInnerClass can be abstract and final only
 		String str = "Member method local variable";
 		MemberClass2 memberClass2 = new MemberClass2();
@@ -48,13 +37,38 @@ class TopClass{
 		localInnerClass.display();
 	}
 	
+	class MemberClass1{
+		//static String localMemberClassStaticVar;
+		static final String localMemberClassStaticFinalVar="localMemberClassStaticFinalVar";
+		void memberClassMethod1(){
+			System.out.println("Member Class can access private member of its enclosing class: "+topClassVar);
+		}
+	}//End of MemberClass
+	
+	private class MemberClass2{
+		
+		void memberClassMethod1(){
+			System.out.println("Member Class can access private member of its enclosing class: "+topClassVar);
+		}
+	}
+	
+	static class StaticMemberClass1{
+		public void staticMemberClassMethod1(){
+			System.out.println("static Member Class Method can access static var : "+topClassStaticVar);
+			//System.out.println("static Member Class Method cannot access non-static var"+topClassVar);
+		}
+	}
 }
 
 public class InnerClassesDemo2 {
 	public static void main(String[] args) {
-		TopClass topClass1 = new TopClass("Manish");
 		
+		TopClass topClass1 = new TopClass("Manish");	
 		topClass1.topClassMethod1();
+		
+		TopClass.MemberClass1 memClass1 = new TopClass("Agrawal").new MemberClass1();
+		memClass1.memberClassMethod1();
+		System.out.println(memClass1.localMemberClassStaticFinalVar);
 		
 		TopClass.MemberClass1 memberClass1 = topClass1.new MemberClass1();
 		memberClass1.memberClassMethod1();
