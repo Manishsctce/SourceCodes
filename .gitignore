@@ -1,6 +1,7 @@
 ## ignore 
 *.class
-/bin/*
-/.settings/*
-/target/*
+bin/**
+.settings/**
+target/**
 .project
+	
