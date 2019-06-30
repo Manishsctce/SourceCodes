@@ -5,32 +5,45 @@
 
 <hibernate-configuration>
 
-	<session-factory>
+<!-- 	<session-factory>
 		
-		<!-- Drop and re-create the database schema on startup -->
+		Drop and re-create the database schema on startup
 		<property name="hbm2ddl.auto">update</property>
 		
-		<!-- Echo all executed SQL to stdout -->
+		Echo all executed SQL to stdout
 		<property name="show_sql">true</property>
 		
 		<property name="dialect">org.hibernate.dialect.HSQLDialect</property> 
-		<!-- <property name="dialect">org.hibernate.dialect.Oracle9Dialect</property> -->
+		<property name="dialect">org.hibernate.dialect.Oracle9Dialect</property>
 		
-		<!-- <property name="connection.url">jdbc:hsqldb:mem:testdb</property> -->
+		<property name="connection.url">jdbc:hsqldb:mem:testdb</property>
 		<property name="hibernate.connection.url"> jdbc:hsqldb:hsql://localhost</property>
-		<!-- <property name="connection.url">jdbc:oracle:thin:@localhost:1521:xe</property> -->
+		<property name="connection.url">jdbc:oracle:thin:@localhost:1521:xe</property>
 		
 		<property name="connection.username">SA</property>
         <property name="connection.password"></property>
-		<!-- <property name="connection.username">system</property>
-		<property name="connection.password">oracle</property> -->
+		<property name="connection.username">system</property>
+		<property name="connection.password">oracle</property>
 		
 		<property name="connection.pool_size">1</property>
 		
 		<property name="connection.driver_class">org.hsqldb.jdbcDriver</property>
-		<!-- <property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property> -->
+		<property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
 
 		<mapping class="com.javatpoint.Employee" />
 	</session-factory>
-
+ -->
+ 
+ 	<session-factory>
+        <property name="hbm2ddl.auto">update</property>
+        <property name="show_sql">true</property>        
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property> 
+		<property name="connection.url">jdbc:mysql://localhost/test</property>		
+		<property name="connection.username">system</property>
+        <property name="connection.password">root</property>
+ 		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+ 		<mapping class="com.javatpoint.Employee" />
+ 		<mapping class="entity_relation_demo1.Book" />
+ 		<mapping class="entity_relation_demo1.Author" />
+    </session-factory>
 </hibernate-configuration>  
