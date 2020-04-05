@@ -1,6 +1,7 @@
 package collectionDemo;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class AnimalIteratorTest {
 
@@ -13,6 +14,12 @@ public class AnimalIteratorTest {
 	
 		for (Object animalObj : animal) {
 			System.out.println(animalObj);
+		}
+		
+		Iterator al = animal.iterator();
+		while (al.hasNext()) {
+			Object object = (Object) al.next();
+			System.out.println(object);
 		}
 	}
 

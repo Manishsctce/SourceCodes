@@ -1,5 +1,5 @@
 package polymorphism;
-
+//
 abstract class Amo4{
 	void m1(){
 		

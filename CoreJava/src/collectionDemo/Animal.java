@@ -17,7 +17,7 @@ public class Animal implements Iterable<String> {
 
 	@Override
 	public Iterator<String> iterator() {
-		return new AnimalIterator(this);
+		return new AnimalIterator(this.animal);
 	}
 
 }

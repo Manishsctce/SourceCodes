@@ -18,8 +18,10 @@ public interface Interface2 {
 	int roll =2;
 	String name ="Manish2";
 	
-	
-	//static int returnRoll(); // interface method cannot be static and Final they are by default public and abstract
+	// interface method cannot be static and Final they are by default public and abstract
+	static int returnRoll() {
+		return 1;
+	}
 	 //int returnRoll();
 	 
 	 //all methods are by default abstract and public therefore no body of method

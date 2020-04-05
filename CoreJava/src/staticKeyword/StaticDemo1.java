@@ -6,19 +6,19 @@ import java.util.List;
 public class StaticDemo1 {
 
 	public static void main(String[] args) {
-		ClassB obj1 = new ClassB();
+		ClassB obj1 = new ClassB();		
 		ClassB obj2 = new ClassB();
 		ClassB obj3 = new ClassB();
 		ClassB obj4 = new ClassB();
 		List<String> list = new ArrayList<>();
-		obj1.addMsg(list);
-		obj2.addMsg(list);
+		obj1.addMsg(list);		obj2.addMsg(list);
 		obj3.addMsg(list);
 		obj4.addMsg(list);
 		
 		System.out.println(list);
+		
+		System.out.println(AbstractClass.s);
 	}
-
 }
 
 class ClassB{
@@ -29,7 +29,9 @@ class ClassB{
 			list.add("Hi Manish");
 			alreadyAdded = true;
 		}
-			
 	}
-	
+}
+
+abstract class AbstractClass{
+	public static String s = "AbstractClass Static variable";
 }

@@ -24,11 +24,16 @@ class TopClass2{
 		int nestedStaticClassVar;
 		void nestedStaticClassMethod(){
 			System.out.println("This is Nested Static Class method");
-			//enclosingClassMethod1();
+			//enclosingClassMethod1(); //Non-Static method
+			enclosingClassStaticMethod1();
 		}
 	}
 	public void enclosingClassMethod1(){
 		System.out.println("enclosing Class Method 1");
+	}
+	
+	public static void enclosingClassStaticMethod1(){
+		System.out.println("enclosing Class Static Method 1");
 	}
 }
 
@@ -39,7 +44,8 @@ public class StaticClassDemo {
 		TopClass2.NestedClass nc1 = tc.new NestedClass();
 		TopClass2.NestedClass nc2 = new TopClass2().new NestedClass();		
 		nc1.nestedClassMethod();
-
+		
+		//we can import NestedClass to create direct reference but cannot create instance directly
 		//NestedClass nc3 = new NestedClass();// Not possible 
 		NestedClass nc3 = tc.new NestedClass();// Not possible without importing modifier.TopClass.NestedClass
 		
