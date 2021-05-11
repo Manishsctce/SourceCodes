@@ -2,14 +2,17 @@ package collectionDemo;
 
 import java.util.ArrayList;
 
-import utilityClasses.Utility;
-import static utilityClasses.Utility.*;
+import utilityClasses.DisplayUtility;
+import utilityClasses.GetUtility;
+
+import static utilityClasses.GetUtility.*;
+import static utilityClasses.DisplayUtility.*;
 
 public class ArrayList_Vector_diff {
 
 	public static void main(String[] args) {
 		ArrayList<String> nameList = new ArrayList<>();
-		nameList.addAll(getNameList());
+		nameList.addAll(GetUtility.getNameList());
 		
 		displayList_withPrint(nameList);
 		

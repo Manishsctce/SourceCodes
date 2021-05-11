@@ -1,7 +1,11 @@
 package collectionDemo.mapDemo;
 
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.stream.Collectors;
+
+import utilityClasses.DisplayUtility;
 
 public class ConcurrentHashMapDemo1 {
 
@@ -13,7 +17,7 @@ public class ConcurrentHashMapDemo1 {
 		chm.put("Jane Baker", new Double(1378.00));
 		chm.put("Tod Hall", new Double(99.22));
 		chm.put("Ralph Smith", new Double(-19.08));
-		//chm.put("Ralph Smith", null); //cann
+		//chm.put("Ralph Smith", null); //NO NULL Key or value
 		
 		for(Map.Entry<String, Double> me : chm.entrySet()){
 			System.out.println(me.getKey() +":"+me.getValue());

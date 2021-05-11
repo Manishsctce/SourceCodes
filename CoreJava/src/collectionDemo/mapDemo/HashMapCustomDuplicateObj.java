@@ -1,5 +1,6 @@
 package collectionDemo.mapDemo;
 
+import java.util.HashMap;
 import java.util.Map;
 
 class Student implements Comparable{
@@ -10,7 +11,6 @@ class Student implements Comparable{
 		this.name = name;
 
 	}
-	
 	
 	@Override
 	public int hashCode() {

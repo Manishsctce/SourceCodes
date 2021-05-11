@@ -4,6 +4,8 @@
   <artifactId>HB_Inheritance_mapping</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
+  <description></description>
+  
   <dependencies>
   	<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
 	<dependency>

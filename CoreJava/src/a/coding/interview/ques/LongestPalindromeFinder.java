@@ -3,16 +3,17 @@ package a.coding.interview.ques;
 public class LongestPalindromeFinder {
 
 	public static void main(String[] args) {
-		/*System.out.println(longestPalindromeString("1234"));
-		System.out.println(longestPalindromeString("12321"));
-		System.out.println(longestPalindromeString("9912321456"));
-		System.out.println(longestPalindromeString("9912333321456"));
-		System.out.println(longestPalindromeString("12145445499"));
-		System.out.println(longestPalindromeString("1223213"));
-		System.out.println(longestPalindromeString("abb"));
-		System.out.println("Palindrome Number: "+isPalindromeNumber(12321));*/
-		
-		System.out.println("Palindrome String:"+isPalindromeStr("123321"));
+		//System.out.println(longestPalindromeString("1234"));
+		//System.out.println(longestPalindromeString("12321"));
+		//System.out.println(longestPalindromeString("9912321456"));
+		//System.out.println(longestPalindromeString("9912333321456"));
+		//System.out.println(longestPalindromeString("12145445499"));
+		//System.out.println(longestPalindromeString("1223213"));
+		//System.out.println(longestPalindromeString("abb"));
+		System.out.println("Palindrome Number 125321: "+isPalindromeNumber(125321));
+		System.out.println("Palindrome Number 12321: "+isPalindromeNumber(12321));
+		System.out.println("Palindrome Number 123321: "+isPalindromeNumber(123321));
+		System.out.println("Palindrome String 123321:"+isPalindromeStr("123321"));
 	}
 
 	static public boolean isPalindromeStr(String string){
@@ -29,7 +30,7 @@ public class LongestPalindromeFinder {
 	}
 	static public boolean isPalindromeNumber(int number){
 		int r,sum=0,temp;    
-		  int n=454;//It is the number variable to be checked for palindrome  
+		  int n=number;//It is the number variable to be checked for palindrome  
 		  
 		  temp=n;    
 		  while(n>0){    

@@ -55,8 +55,8 @@ class Consumer implements Runnable{
 public class ProducerConsumerDemo1 {
 	public static void main(String args[]){	
 		Que q = new Que();
-		Producer2 producer = new Producer2(q);
-		Consumer2 consumer = new Consumer2(q);
+		Producer producer = new Producer(q);
+		Consumer consumer = new Consumer(q);
 		System.out.println("Hello");
 	}
 }

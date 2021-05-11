@@ -6,6 +6,27 @@ import java.util.*;
 
 class LinkedListDemo {
 	public static void main(String args[]) {
+
+		displayOnlyString();
+	}
+	
+	
+	public static void displayOnlyString() {
+		List<Object> list = new LinkedList<>();
+		list.add(1);list.add(2);list.add(3);
+		list.add("one");list.add("two");list.add("three");
+		
+		list.forEach(e -> {
+			if(e instanceof Integer)
+				System.out.println(e);
+		});
+		list.forEach(e -> {
+			if(e instanceof String)
+				System.out.println(e);
+		});
+	}
+	
+	public static void linkedBasedOperation() {
 		// Create a linked list.
 		LinkedList<String> ll = new LinkedList<String>();
 		// Add elements to the linked list.
@@ -26,5 +47,6 @@ class LinkedListDemo {
 		String val = ll.get(2);
 		ll.set(2, val + " Changed");
 		System.out.println("ll after change: " + ll);
+		
 	}
 }

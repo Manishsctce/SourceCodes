@@ -1,0 +1,80 @@
+<div class="page-area">
+    <div class="row justify-content-center">
+        <div class="col-md-8 shadow text-left">
+
+            <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+
+                <div class="form-group">
+                    <label for="firstname">First Name</label>
+                    <input class="form-control" type="text" id="firstname" name="firstname"
+                        [(ngModel)]="contact.firstname">
+                </div>
+
+                <div class="form-group">
+                    <label for="lastname">Last Name</label>
+                    <input class="form-control" type="text" id="lastname" name="lastname"
+                        [(ngModel)]="contact.lastname">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email </label>
+                    <input class="form-control" type="text" id="email" name="email" [(ngModel)]="contact.email"
+                        #emailaddr="ngModel" email>
+                    <small class="text-danger" [hidden]="emailaddr.valid">Please enter valid email id.</small>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="gender">Geneder: </label>
+                    <input type="radio" value="male" id="gender" name="gender" ngModel [(ngModel)]="contact.gender">
+                    Male
+                    <input type="radio" value="female" id="gender" name="gender" ngModel [(ngModel)]="contact.gender">
+                    Female
+                </div>
+
+                <div class="form-group form-check">
+                    <input class="form-check-input" type="checkbox" id="isMarried" name="isMarried" ngModel
+                        [(ngModel)]="contact.isMarried">
+                    <label class="form-check-label" for="isMarried">Married </label>
+
+                </div>
+
+                <div class="form-group" ngModelGroup="address">
+                    <label for="address"> Address</label>
+                    <input class="form-control" type="text" name="address" id="address" ngModel>
+
+                    <label for="country">State </label>
+                    <select class="form-control" name="state" id="state" ngModel>
+                        <option *ngFor="let s of stateList">
+                            {{s}}
+                        </option>
+                    </select>
+
+                    <label for="country">Country </label>
+                    <select class="form-control" name="country" id="country" ngModel>
+                        <option [ngValue]="c.id" *ngFor="let c of countryList">
+                            {{c.name}}
+                        </option>
+                    </select>
+                </div>
+
+
+                <button type="submit" class="btn btn-success" [disabled]="!contactForm.valid">Submit</button>
+                <button type="reset" (onClick)="resetForm(contactForm)" class="btn btn-danger ml-1">Reset Form</button>
+
+                <button type="button" (click)="changeCountry()" class="btn btn-info ml-1">Change Country</button>
+                <button type="button" (click)="setDefaults()" class="btn btn-secondary ml-1">Set Defaults</button>
+                <button type="button" (click)="patchValue()"class="btn btn-dark ml-1">Patch Value</button>
+                <button type="button" (click)="changeAddress()" class="btn btn-light ml-1">Change Address</button>
+                <button type="button" (click)="reset()" class="btn btn-warning ml-1">Reset</button>
+                
+            </form>
+
+
+            <b>valid</b> {{contactForm.valid}}
+            <b>touched</b> {{contactForm.touched}}
+            <b>pristine</b> {{contactForm.pristine}}
+            <b>dirty</b> {{contactForm.dirty}}
+        </div>
+    </div>
+</div>

@@ -41,6 +41,9 @@ public class ThreadDemo1 {
 		Runner1 runner1 = new Runner1();
 		runner1.start();
 		
+		
+		runner1.yield();
+		
 		Runner2 runner2 = new Runner2();
 		//runner2.start();// we cann't call thread method like this, which are make by implementing Runnable interface
 		new Thread(runner2).start();//we need thread object to call runnable class

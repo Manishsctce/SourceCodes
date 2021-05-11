@@ -1,6 +1,6 @@
 package modifier;
-// Abstract class reference can initialize with null
-// Abstract class can have static methods 
+// #1 Abstract class reference can initialize with null
+// #2 Abstract class can have static methods 
 /*interface  Vehicle{
 	public int price = 20000;
 	public int wheel = 0;
@@ -24,7 +24,7 @@ abstract class Vehicle{
 	abstract void cost();
 	abstract void tax();
 	
-	public static void gst() {
+	public static void gst() { //#2
 		System.out.println("GST applied!!");
 	}
 }
@@ -65,7 +65,7 @@ public class AbstractClass_test2 {
 		bajaj.cost();
 		bajaj.tax();
 		
-		Vehicle hero = null;
+		Vehicle hero = null; //#1
 		hero.gst();
 	}
 

@@ -18,7 +18,7 @@ public class WaitMethodDemo {
 		
 		synchronized (obj) {
 			try {
-				obj.wait(5);
+				obj.wait(5000);
 				System.out.println("wait over");
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block

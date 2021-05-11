@@ -1,6 +1,6 @@
 package java8_transforming_code_to_java8;
 
-import static utilityClasses.Utility.*;
+import static utilityClasses.DisplayUtility.*;
 
 import java.util.Arrays;
 import java.util.Comparator;

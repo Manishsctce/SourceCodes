@@ -1,0 +1,15 @@
+#sidebar {
+    min-width: 150px;
+    max-width: 150px;
+    background: rgb(177, 238, 209);
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar-title {
+    text-decoration: solid;
+    text-decoration-color: blue;
+    color: blue;
+    font-size: medium;
+    font-weight: bold;
+}

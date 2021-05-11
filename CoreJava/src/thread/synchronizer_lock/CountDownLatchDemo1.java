@@ -15,7 +15,6 @@ public class CountDownLatchDemo1 {
 		latch.await();
 		System.out.println("End");
 	}
-
 }
 
 class RunnableThread implements Runnable {

@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import zzClasses.Employee;
+
 public class MethodReferenceDemo {
 
 	public static void main(String[] args) {
@@ -13,7 +15,7 @@ public class MethodReferenceDemo {
 			      new Employee("Nancy Smith", 15),
 			      new Employee("Deborah Sprightly", 29));
 		
-		empList.forEach(e->System.out.println(e.getName()));
+		empList.forEach(e->System.out.println(e.getEmpName()));
 		//empList.forEach(System.out::println);
 
 		  List<String> gamesList = new ArrayList<String>();  

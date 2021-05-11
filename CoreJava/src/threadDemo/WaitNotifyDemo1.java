@@ -18,8 +18,12 @@ package threadDemo;
 	}
 }*/
 class Runner implements Runnable{
+	/* (non-Javadoc)
+	 * @see java.lang.Runnable#run()
+	 */
 	synchronized public void run() {
 		int count = 0;
+		System.out.println("Runner class run method "+count+ " ");
 		for(int i=0;i<10;i++,count++){
 			try {
 				Thread.sleep(500);

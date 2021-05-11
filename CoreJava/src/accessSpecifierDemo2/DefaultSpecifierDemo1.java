@@ -10,7 +10,8 @@ public class DefaultSpecifierDemo1 {
 		p.setNickName("Manas");
 		p.setIncome("100000000");
 		p.setState("MH");
-		System.out.println(p);
+		System.out.println(p)
+
 	}
 
 }

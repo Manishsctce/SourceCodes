@@ -1,0 +1,14 @@
+<table class="table table-light">
+    <tbody>
+        <tr>
+            <th>Id </th>
+            <th>Name </th>
+            <th>Gender </th>
+        </tr>
+        <tr *ngFor="let e of employeeList;">
+            <td>{{e.id}}</td>
+            <td>{{e.name}}</td>
+            <td>{{e.gender}}</td>
+        </tr>
+    </tbody>
+</table>
